@@ -13,21 +13,23 @@
 
             //UC-1 Check employee present or not
             Random random = new Random();
-            int randomInput = random.Next(0, 3);
-            if (randomInput == FULL_TIME)
+            int employeeInput = random.Next(0, 3);
+            //UC4 using Switch case
+            switch (employeeInput) 
             {
-                Console.WriteLine("FullTime Employee is Present");
-                empHrs = 8;
-            }
-            else if (randomInput == PART_TIME)
-            {
-                Console.WriteLine("PartTime Employee is Present");
-                empHrs = 4;
-            }
-            else
-            {
-                Console.WriteLine("Employee is Absent");
-                empHrs = 0;
+                case FULL_TIME:
+                    Console.WriteLine("FullTime Employee is Present");
+                    empHrs = 8;
+                    break;
+                case PART_TIME:
+
+                    Console.WriteLine("PartTime Employee is Present");
+                    empHrs = 4;
+                    break;
+                default:
+                    Console.WriteLine("Employee is Absent");
+                    empHrs = 0;
+                    break;
             }
 
             //UC-2 & UC-3 calculate Employee Wage

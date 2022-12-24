@@ -14,6 +14,7 @@
 
             Console.ReadLine();
         }
+        //UC8 - Multiple Companies
         public static void GetEmpWage(string company, int empRatePerHr, int maxWorkingDays, int maxWorkingHrs)
         {
             int empWage = 0, totalWage = 0, day = 1, empHrs = 0, totalHrs = 0;
